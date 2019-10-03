@@ -1,1 +1,278 @@
-For TechSup
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ua" lang="ua">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3091430-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-3091430-4');
+  </script>
+  <!-- end google analytic -->
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"b77acbbcc1","applicationID":"30949102","transactionName":"eltdQ0dcXV8BQx8RQUxQSmhBXF5fFx5UEFpJG0BDVEFF","queueTime":0,"applicationTime":92,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--[if IE]>
+    <link rel="stylesheet" media="screen" href="/assets/s2ie-d652099ce5479bbbdb331f084cd774c510b09693baa3ad084a6d3f2dc333669b.css" />
+    <script src="/javascripts/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <meta property="og:image" content="https://mix.sumdu.edu.ua/images/logo-mix.png" />
+  <meta property="og:title" content="Technical Solution Support / Практика / Задание 1 Система управления версиями / Системы управления версиями	&lt;a href=&#39;/annotate/index/482377&#39; title=&#39;комментарии&#39; target=&#39;_node_comments&#39;
+	onclick=&quot;window.open(&#39;/annotate/index/482377&#39;, &#39;_node_comments&#39;, &#39;menubar=no,width=600,height=400,scrollbars=yes,navbar=no&#39;); return false&quot;&gt;
+	comment
+">
+  <meta property="og:description" content="Technical Solution Support / Практика / Задание 1 Система управления версиями / Системы управления версиями	&lt;a href=&#39;/annotate/index/482377&#39; title=&#39;комментарии&#39; target=&#39;_node_comments&#39;
+	onclick=&quot;window.open(&#39;/annotate/index/482377&#39;, &#39;_node_comments&#39;, &#39;menubar=no,width=600,height=400,scrollbars=yes,navbar=no&#39;); return false&quot;&gt;
+	comment
+">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/logo-mix-1f5c485ba65035da8b8513c3f9f999542ef756423f583f04b680fbd5133c7724.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" media="screen" href="/assets/s2-a5ee8cbbc7a6bdb931e694f3f87afaf86d2f503ce6e5bfcc16f4aa4c7c28e08b.css" />
+<link rel="stylesheet" media="screen" href="/assets/jquery.dropdown-b6906d40e4e4cd8d7ece43ad5951105771e36667b88e5067d85d1e6372986857.css" />
+<link rel="stylesheet" media="screen" href="/assets/jquery.notice-c05dde7f8180ba3b1e237f56fe38f781bc0d5a1051620b44ceed3d939e79348b.css" />
+<link rel="stylesheet" media="screen" href="/assets/jtip/jtip-e90d4471ecc4ab662a95500ebd4e2668518031ff0bead1000c4e566b90c213f4.css" />
+<link rel="stylesheet" media="screen" href="/assets/select2-45688abf1f7b9c3ae56902596c67e27bc1b59cf082702f7abc2483b51cbdbc64.css" />
+
+  <script src="/assets/application-a98ee5eb1a1ae53fc897d35f9396bc5b776171207f0cd1ab461cae591eb7338a.js"></script>
+  
+  <script type='text/javascript'> var variant = '13';</script>
+<script type='text/javascript' src='/javascripts/opentask/ot.js'></script>
+<script type='text/javascript' src='/javascripts/opentask/lang.js'></script>
+  <title>Technical Solution Support / Практика / Задание...</title>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="nav-wrapper light-green lighten-1">
+      <div class="container">
+        <a href="/home/roles"><img class="hide-on-med-and-down margin" style="max-width: 64px;" src="/assets/short-logo-mix-04fdd92316d3432a6a9e0b85b9dc0bad9105732a4235d7d9c3736c9a8038a61f.svg" alt="Short logo mix" /></a>
+          <a class="brand-logo logo hide-on-med-and-down" href="/home/roles">MIX.СумДУ</a>
+        <ul class='right'>
+            
+            <li>
+  <a data-activates="anketa" data-beloworigin="true" class="dropdown-button" href="#"><img class="circle img32" src="/img/userpic/small/Oleksandr.pantiukhin.png" /></a>
+  <ul id='anketa' class='dropdown-content'>
+    <li>
+      <a href="/home/info">Анкета</a>
+    </li>
+    <li>
+      <a href="/logout">выход</a>
+    </li>
+  </ul>
+</li>
+
+
+<li></li><li><a href="/home/pm"><i class='small material-icons unread' data-badge="7" title="Непрочитаных: 7">email</i></a></li><li>	<a href="#" class='dropdown-button' data-beloworigin="true" data-activates="mcc_list">
+		<i class="small material-icons">book</i>
+	</a>
+	<ul id="mcc_list" class='dropdown-content'>
+		
+  <li><span style="padding: .2rem; font-weight:bold;">Изучение</span>
+    <ul>
+    <li class="mcc-elem">
+      <a href="/study/course/1145">
+        Technical Solution Support<br/>
+          (28.09.2019 &ndash; 31.12.2019 )
+      </a>
+    </li>
+    <li class="mcc-elem">
+      <a href="/study/course/516">
+        Web-технології та web-дизайн<br/>
+          ((??.??.????) &ndash; (??.??.????) )
+      </a>
+    </li>
+    <li class="mcc-elem">
+      <a href="/study/course/179">
+        Комп&#39;ютерна графіка<br/>
+          (29.08.2018 &ndash; 05.09.2018 )
+      </a>
+    </li>
+    </ul>
+  </li>
+
+
+	</ul>
+</li>
+        </ul>
+      </div>
+          <div id="fixed-box">
+            <div class="container">
+              <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="small material-icons">menu</i>
+              </a>
+                  <a href="javascript:history.back()"><i class="large material-icons black-text">arrow_back</i></a>
+      <a href="/course_redirect/jump/406">Technical Solution Support</a> / <a href='/textbooks/3984/482375/index.html' target='_parent'>Практика</a> / <a href='/textbooks/3984/482376/index.html' target='_parent'>Задание 1 Система управления версиями</a> / Системы управления версиями<span class='right'>	<a href='/annotate/index/482377' title='комментарии' target='_node_comments'
+	onclick="window.open('/annotate/index/482377', '_node_comments', 'menubar=no,width=600,height=400,scrollbars=yes,navbar=no'); return false">
+	<i class="small white-text material-icons">comment</i></a>
+</span>
+
+              
+            </div>
+          </div>
+          <style type="text/css">
+              body main {
+                  margin-top: 64px;
+              }
+          </style>
+    </div>
+  </nav>
+</header>
+
+<main>
+<div class="container">
+	<div class="row">
+		<div class="col s12 m12 l12">
+		  
+		  <div class="card-panel white">
+<div class="row">
+<div class="col s12 m10 offset-m1 l10 offset-l1">
+
+  <div id="opentask">
+  <div id="errorholder"></div>
+  <div id="task">
+    Цель работы - получить базовые навыки работы с системами контроля версий (VCS).
+
+<h2>Задание</h2>
+<ol>
+  <li>Создайте публично-доступный репозитарий, с использованием любой системы контроля, на ваш выбор. Можете воспользоваться <a href='http:\\github.com'>GitHub</a> (VCS Git), <a href='http:\\bitbucket.com'>BitBucket</a> (VCS Git), <a href='http://repositoryhosting.com/'>Repository Hosting</a> (VCS Git, Mercurial, Subversion; 1 месяц бесплатно) или любым другим <a href='https://www.google.com.ua/search?q=free+Svn+hosting'>1</a>, <a href='https://www.google.com.ua/search?q=free+GIT+hosting'>2</a>, <a href='https://www.google.com.ua/search?q=free+Mercurial+hosting'>3</a>. Если у Вас возникли трудности - спросите коллег в следующем задании-обсуждении.</li>
+  <li>Убедитесь, что другие пользователи имеют доступ на чтение к вашему репозиторию.</li>
+  <li>Добавьте новый файл "ваше имя.txt". Зафиксируйте изменения (Commit). Сообщение о коммите должно быть содержательным (объяснять, зачем было сделано изменений).</li>
+  <li>Измените файл "ваше имя.txt". Зафиксируйте изменения.</li>
+  <li>Создайте новую ветку и перейдите в нее</li>  
+  <li>Измените файл "ваше имя.txt". Создайте файл branch.txt. Зафиксируйте изменения.</li>  
+  <li>Создайте новую метку (tag).</li>  
+  <li>Перейдите в основную ветку. Если все сделано правильно - в ней не будет файла branch.txt.</li>
+  <li>Напишите краткий отчет: какую VCS Вы выбрали, каким хостингом воспользовались, адрес репозитория, скриншоты действий.</li>  
+  <li>Помогите советами Вашим коллегам в задании-обсуждении, поделитесь своим опытом.</li>  
+</ol>
+
+  </div>
+</div>
+<script>
+function replaceCommentForm(new_content) {
+  jQuery("#comment-form").replaceWith(new_content);  
+}
+</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: {inlineMath: [["[tex]","[/tex]"],["[TEX]","[/TEX]"]], displayMath: [["$$", "$$"]]}, displayAlign: "center", displayIndent: "0.1em"  });</script><script type="text/javascript" src="/cdn/javascripts/mathjax/MathJax.js?config=TeX-MML-AM_HTMLorMML-full" ></script>
+<script type="text/javascript">
+function text_if_defined(text, def){
+    if (text == '') return def;
+    return text;
+}
+function Show_or_Hide_Subling(button){
+  button = $(button).parent();
+  var object = button.find('.cut').first();
+  var top_button = button.find('.wrapper_top').first();
+  var bottom_button = button.find('.wrapper_bottom').first();
+  if (object.css('display') == 'none' || object.css('visibility') == 'hidden' || object.css('overflow') == 'hidden'){
+    top_button.find('img').first().attr('src','/textbooks/artwork/img/less.png');
+    $(top_button.find('span')[0]).hide();
+    $(top_button.find('span')[1]).show();
+    bottom_button.show();
+    object.show();
+  } else {
+    top_button.find('img').first().attr('src','/textbooks/artwork/img/more.png');
+    $(top_button.find('span')[1]).hide();
+    $(top_button.find('span')[0]).show();
+    bottom_button.hide();
+    object.hide();
+    window.scroll(0,top_button.adjacent('img')[0].offsetTop);
+  }
+  return false;
+}
+
+
+function addCutWrapping() {
+  var cut_close_button = 
+    "<div class='wrapper_bottom' onClick='Show_or_Hide_Subling(this)' style='display:none'><img src='/textbooks/artwork/img/direction_up.png' title='згорнути' alt='згорнути'></div>";
+  $('div.cut').each(function(){
+    var obj = $(this);
+    var more = text_if_defined(obj.find('span.if_hide').text(), 'Детальніше');
+    var less = text_if_defined(obj.find('span.if_show').text(), 'Згорнути');
+    var show_hide_button =
+      '<div class="wrapper_top" onClick="Show_or_Hide_Subling(this);">'+
+        ' <img src="/textbooks/artwork/img/more.png" title="Відкрити|Сховати"></img>'+
+        ' <span>'+more+'</span><span style="display:none">'+less+'</span></div>';
+    obj.wrap("<div class='wrapper'></div>");
+    obj.before(show_hide_button).after(cut_close_button).hide();
+  });
+}
+addCutWrapping();
+</script>
+
+
+
+    <div>
+      <form enctype="multipart/form-data" action="/documents" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="lazz9VejBSKjif1/ejB3+br4E8Eq4EVgGkZxGYQCKRLny8MumjHvO74wlC7JWxYruP1S2+UZHQACcXLVbYP+8g==" />
+        <input type="hidden" name="node_id" id="node_id" value="482377" />
+        <input type="submit" class="btn base-background" value="Створити новий звіт онлайн" />
+</form>    </div>
+    <form action="/study_tools/drop/create/482377" enctype="multipart/form-data" method="post" class="droptask-files"  >
+      <input type="hidden" name="other_document" value="noconvert" />
+      <span class='notice'> Варіант завдання: 13 </span><br/>
+      <h4>Надіслати файл із вашим звітом-відповіддю : </h4>
+      <p>Розмір файлів не повинен перевищувати 10 Мб</p>
+      
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>File</span>
+          <input type="file" name="attachment" size="40" />
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <button type="submit" class="btn waves-effect waves-light indigo">Завантажити та надіслати</button>
+    </form>
+    
+</div>
+</div>
+</div>
+
+		</div>
+	</div>
+</div>
+</main>
+</div> <!-- end #wrap -->
+
+<footer class="center-align">
+<!-- <div class="footer_img"><img class="img2" src="./images/reg_pic.png" alt="Sumy State University" width="100%" height="100%"></div> -->
+</footer>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: {inlineMath: [["[tex]","[/tex]"],["[TEX]","[/TEX]"]], displayMath: [["$$", "$$"]]}, displayAlign: "center", displayIndent: "0.1em"  });</script><script type="text/javascript" src="/cdn/javascripts/mathjax/MathJax.js?config=TeX-MML-AM_HTMLorMML-full" ></script>
+<!-- google analytic -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3091430-4', 'mix.sumdu.edu.ua');
+  ga('send', 'pageview');
+
+</script>
+<!-- end google analytic -->
+<script>
+function startChatWith(uname, nick) {
+    // Using a try/catch override IE issues
+    try {
+      var t = 'chat';
+      if(uname.match(/@conference/)) {
+        t = 'groupchat';
+      }
+      chatMini(t, uname, nick || uname , hex_md5(uname) );
+    }
+    
+    catch(e) {}
+    
+    finally {
+      return false;
+    }
+}    
+</script>
+</body>
+</html>
